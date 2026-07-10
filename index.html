@@ -192,7 +192,8 @@
         var payload = JSON.stringify({
           ACCESS_TOKEN: data.access_token,
           REFRESH_TOKEN: data.refresh_token || '',
-          EXPIRES_IN: data.expires_in || 3600
+          EXPIRES_IN: data.expires_in || 3600,
+          VCC_API_KEY: data.vcc_api_key || ''
         });
 
         sessionStorage.removeItem('pkce_verifier');
